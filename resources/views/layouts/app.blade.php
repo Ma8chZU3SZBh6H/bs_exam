@@ -20,12 +20,12 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 </ul>
                 <div class="d-flex gap-3">
-                    <form class="d-flex">
-                        <button class="btn btn-outline-primary" type="submit">Login</button>
-                    </form>
-                    <form class="d-flex">
-                        <button class="btn btn-outline-success" type="submit">Register</button>
-                    </form>
+                  <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal">
+                    Login
+                  </button>
+                  <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#registerModal">
+                    Register
+                  </button>
                     <form class="d-flex">
                         <button class="btn btn-outline-danger" type="submit">Logout</button>
                     </form>
@@ -37,5 +37,9 @@
     <main class="container mt-5">
         @yield('main')
     </main>
+    <footer>
+      <x-modal.login/>
+      <x-modal.register/>
+    </footer>
 </body>
 </html>
