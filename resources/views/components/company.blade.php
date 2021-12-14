@@ -15,43 +15,43 @@
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                   <div class="ms-2 me-auto">
                     <div class="fw-bold">Code</div>
-                    304956632
+                    {{$company->code}}
                   </div>
                 </li>
                 <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                       <div class="fw-bold">Pvm</div>
-                      LT100013776412
+                      {{$company->pvm}}
                     </div>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                       <div class="fw-bold">Address</div>
-                      S.Daukanto g. 23, LT-44249 Kaunas
+                      {{$company->address}}
                     </div>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                       <div class="fw-bold">Phone</div>
-                      Thinkbig Lt Telefonas
+                      {{$company->phone}}
                     </div>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                       <div class="fw-bold">El. pašto adresas</div>
-                      test@gmail.com
+                      {{$company->email}}
                     </div>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                       <div class="fw-bold">Veikla</div>
-                      programming
+                      {{$company->does}}
                     </div>
                   </li>
                   <li class="list-group-item d-flex justify-content-between align-items-start">
                     <div class="ms-2 me-auto">
                       <div class="fw-bold">Vadovas</div>
-                        Edvinas Sipavičius
+                        {{$company->ceo}}
                     </div>
                   </li>
               </ol>

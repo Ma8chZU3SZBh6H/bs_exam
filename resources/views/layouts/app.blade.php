@@ -48,6 +48,7 @@
     <footer>
       <x-modal.login/>
       <x-modal.register/>
+      <x-modal.add/>
     </footer>
 </body>
 </html>
