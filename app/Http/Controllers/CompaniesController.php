@@ -12,4 +12,10 @@ class CompaniesController extends Controller
         $request->user()->companies()->create($request->all());
         return back();
     }
+
+    public function destroy(Company $company)
+    {
+        $company->delete();
+        return back();
+    }
 }

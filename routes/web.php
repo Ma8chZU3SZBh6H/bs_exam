@@ -24,3 +24,4 @@ Route::post('/logout', [LoginController::class, 'destroy'])->middleware('auth')-
 Route::post('/register', [RegisterController::class, 'store'])->middleware('guest')->name('register');
 
 Route::post('/company', [CompaniesController::class, 'store'])->middleware('auth')->name('company');
+Route::delete('/company/{company}', [CompaniesController::class, 'destroy'])->middleware('auth')->name('company.delete');

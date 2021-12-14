@@ -6,7 +6,9 @@
                     <form class="d-flex">
                         <button class="btn btn-outline-primary" type="submit">Edit</button>
                     </form>
-                    <form class="d-flex">
+                    <form action="{{route('company.delete', $company)}}" method="post" class="d-flex">
+                        @csrf
+                        @method('delete')
                         <button class="btn btn-outline-danger" type="submit">Delete</button>
                     </form>
                 </div>
